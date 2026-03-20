@@ -1,0 +1,16 @@
+# CRT Signal Monitor - 設定檔
+# 複製此檔為 config.yaml，填入你的設定
+
+telegram:
+  api_id: YOUR_API_ID              # https://my.telegram.org 取得
+  api_hash: "YOUR_API_HASH"
+  phone: "+886xxxxxxxxx"
+  session_name: "crt_monitor"
+  channels:
+    - chat_id: -1003706518531      # CRT SNIPER CFD
+      name: "CFD"
+    - chat_id: -1003868559200      # CRT SNIPER CRYPTO
+      name: "CRYPTO"
+
+database:
+  url: "sqlite:///data/monitor.db"
